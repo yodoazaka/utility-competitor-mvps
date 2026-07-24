@@ -1,22 +1,25 @@
-# Apex OBD — Play Store copy
+# ArcTag NFC — Play Store copy
 
 **Short description**  
-Car diagnostics explained in plain English. Live gauges + clear fault help. $3.99 once.
+NFC made simple. Templates for Wi‑Fi, links, notes & contacts. $2.99 once.
 
 **Full description**  
-Apex OBD helps you understand what your car is saying — without a mechanic’s dictionary.
+ArcTag NFC starts with templates — not a blank technical writer.
 
 WHAT YOU GET
-• Guided setup: plug adapter → pair → live dashboard  
-• Large, readable gauges (RPM, speed, coolant, load, battery, intake)  
-• Fault codes with “what this means” and “what to do”  
-• Demo mode so you can explore before buying an adapter  
-• One-time $3.99 — no subscription  
+• Template gallery: Share Wi‑Fi, Open a link, Save a note, Share contact  
+• Step-by-step writer with confirm-before-write  
+• Large “Ready to tap” screen  
+• Friendly reader empty state and clear summaries  
+• Saved profiles for reuse  
+• One-time $2.99 — no subscription  
 
 WHO IT’S FOR  
-Everyday drivers who want to know if a check-engine light is urgent or can wait.
+People who want NFC to feel approachable: home Wi‑Fi sharing, menus, desk labels, quick contacts.
 
 HOW TO START  
-Follow the in-app 3-step guide, or open demo mode instantly.
+1. Open Templates  
+2. Choose what the tag should do  
+3. Confirm → hold the tag to your phone  
 
-Requires a compatible Bluetooth OBD-II adapter for live vehicle data.
+Requires an NFC-capable Android device for live tag I/O. Demo mode included for exploration.

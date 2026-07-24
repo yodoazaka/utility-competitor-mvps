@@ -1,24 +1,24 @@
 {
   "expo": {
-    "name": "Apex OBD",
-    "slug": "apex-obd",
+    "name": "ArcTag NFC",
+    "slug": "arctag-nfc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0B1218"
+      "backgroundColor": "#F6F4FF"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.apexobd.app"
+      "bundleIdentifier": "com.arctagnfc.app"
     },
     "android": {
-      "package": "com.apexobd.app",
+      "package": "com.arctagnfc.app",
       "adaptiveIcon": {
-        "backgroundColor": "#0B1218",
+        "backgroundColor": "#F6F4FF",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"

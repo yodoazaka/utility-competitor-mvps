@@ -1,16 +1,15 @@
-# Apex OBD
+# ArcTag NFC
 
-Clear car diagnostics for everyone. One-time **$3.99** (vs typical ~$4.95 OBD tools).
+Template-first NFC writer. One-time **$2.99** (vs typical ~$3.99 Pro tools).
 
 ## What it does
-Connect a Bluetooth OBD-II adapter, see calm live gauges, and read check-engine codes in plain English with next steps.
+Write Wi‑Fi, links, notes, and contacts to NFC tags with a confirm-before-write flow. Read tags with a clear summary.
 
 ## Who it’s for
-Drivers who want clarity before a shop visit — not raw PID dumps.
+Hosts, makers, and anyone who wants NFC without a settings maze.
 
 ## How to start
-1. Open the app → guided 3-step setup  
-2. Or explore demo sample data immediately  
+Templates → pick one → fill details → confirm → tap (or simulate in demo).
 
 ## Run
 ```bash
@@ -18,4 +17,4 @@ npm start
 ```
 
 ## Note
-This MVP stubs hardware pairing. Gauges and codes use demo streams.
+Hardware NFC I/O is stubbed in this MVP with an explicit demo banner.

@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-  ViewStyle,
-} from 'react-native';
+import { Pressable, StyleSheet, Text, ViewStyle } from 'react-native';
 import { colors, spacing } from '../theme';
 
 type Props = {
@@ -31,8 +25,7 @@ export function Button({ title, onPress, variant = 'primary', style }: Props) {
       <Text
         style={[
           styles.label,
-          variant === 'ghost' && styles.ghostLabel,
-          variant === 'secondary' && styles.secondaryLabel,
+          variant !== 'primary' && styles.altLabel,
         ]}
       >
         {title}
@@ -44,34 +37,18 @@ export function Button({ title, onPress, variant = 'primary', style }: Props) {
 const styles = StyleSheet.create({
   base: {
     borderRadius: 14,
-    paddingVertical: 16,
+    paddingVertical: 15,
     paddingHorizontal: spacing.lg,
     alignItems: 'center',
   },
-  primary: {
-    backgroundColor: colors.accent,
-  },
+  primary: { backgroundColor: colors.accent },
   secondary: {
-    backgroundColor: colors.bgSoft,
+    backgroundColor: colors.bgElevated,
     borderWidth: 1,
     borderColor: colors.border,
   },
-  ghost: {
-    backgroundColor: 'transparent',
-  },
-  pressed: {
-    opacity: 0.85,
-  },
-  label: {
-    color: '#06201C',
-    fontSize: 17,
-    fontWeight: '700',
-    letterSpacing: 0.2,
-  },
-  secondaryLabel: {
-    color: colors.text,
-  },
-  ghostLabel: {
-    color: colors.accent,
-  },
+  ghost: { backgroundColor: 'transparent' },
+  pressed: { opacity: 0.88 },
+  label: { color: '#FFFFFF', fontSize: 16, fontWeight: '700' },
+  altLabel: { color: colors.accent },
 });
