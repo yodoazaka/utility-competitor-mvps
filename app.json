@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Apex OBD",
+    "slug": "apex-obd",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1218"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.apexobd.app"
+    },
+    "android": {
+      "package": "com.apexobd.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1218",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
