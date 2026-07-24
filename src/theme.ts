@@ -1,15 +1,15 @@
 export const colors = {
-  bg: '#0B1218',
-  bgElevated: '#121C26',
-  bgSoft: '#182430',
-  border: '#243444',
-  text: '#F2F6FA',
-  textMuted: '#8FA3B5',
-  accent: '#2DD4BF',
-  accentDim: '#1A9E8E',
-  warn: '#F5A524',
-  danger: '#F07178',
-  success: '#7BD88F',
+  bg: '#0A0C0A',
+  bgElevated: '#121512',
+  bgSoft: '#1A1F1A',
+  border: '#2A332A',
+  text: '#F4F7F2',
+  textMuted: '#9AAA94',
+  accent: '#B8FF3C',
+  accentDim: '#7AB01F',
+  warn: '#FFC857',
+  danger: '#FF6B6B',
+  success: '#B8FF3C',
 };
 
 export const spacing = {

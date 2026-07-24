@@ -1,21 +1,17 @@
-# Apex OBD
+# AmpBoost
 
-Clear car diagnostics for everyone. One-time **$3.99** (vs typical ~$4.95 OBD tools).
+Honest one-tap game session helper. **Free** (optional $0.49 tip) — cheaper than paid-only boosters.
 
 ## What it does
-Connect a Bluetooth OBD-II adapter, see calm live gauges, and read check-engine codes in plain English with next steps.
+Frees memory and reduces focus noise before you play. Clear before/after status. No fake “4×” claims.
 
 ## Who it’s for
-Drivers who want clarity before a shop visit — not raw PID dumps.
+Mobile gamers who want a simple, trustworthy boost button.
 
 ## How to start
-1. Open the app → guided 3-step setup  
-2. Or explore demo sample data immediately  
+Open **Boost** → tap the big button → launch your game.
 
 ## Run
 ```bash
 npm start
 ```
-
-## Note
-This MVP stubs hardware pairing. Gauges and codes use demo streams.

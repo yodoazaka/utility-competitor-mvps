@@ -3,67 +3,45 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { TabBar } from './src/components/TabBar';
-import { DashboardScreen } from './src/screens/DashboardScreen';
-import { FaultsScreen } from './src/screens/FaultsScreen';
-import { PairingScreen } from './src/screens/PairingScreen';
+import { HomeScreen } from './src/screens/HomeScreen';
+import { SessionScreen } from './src/screens/SessionScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
-import { WelcomeScreen } from './src/screens/WelcomeScreen';
+import { TipsScreen } from './src/screens/TipsScreen';
 import { colors } from './src/theme';
 
-type Phase = 'welcome' | 'pairing' | 'app';
-type Tab = 'dashboard' | 'faults' | 'settings';
+type Tab = 'home' | 'session' | 'tips' | 'settings';
 
 export default function App() {
-  const [phase, setPhase] = useState<Phase>('welcome');
-  const [tab, setTab] = useState<Tab>('dashboard');
-  const [connected, setConnected] = useState(false);
-
-  const enterApp = (linked: boolean) => {
-    setConnected(linked);
-    setTab('dashboard');
-    setPhase('app');
-  };
+  const [tab, setTab] = useState<Tab>('home');
+  const [boosting, setBoosting] = useState(false);
 
   return (
     <SafeAreaProvider>
       <View style={styles.root}>
         <StatusBar style="light" />
-        {phase === 'welcome' && (
-          <WelcomeScreen onStart={() => setPhase('pairing')} />
-        )}
-        {phase === 'pairing' && (
-          <SafeAreaView style={styles.flex} edges={['bottom']}>
-            <PairingScreen
-              onComplete={() => enterApp(true)}
-              onSkipDemo={() => enterApp(false)}
-            />
-          </SafeAreaView>
-        )}
-        {phase === 'app' && (
-          <SafeAreaView style={styles.flex} edges={['bottom']}>
-            <View style={styles.flex}>
-              {tab === 'dashboard' && <DashboardScreen connected={connected} />}
-              {tab === 'faults' && <FaultsScreen />}
-              {tab === 'settings' && (
-                <SettingsScreen
-                  onRestart={() => {
-                    setPhase('welcome');
-                    setConnected(false);
-                  }}
-                />
-              )}
-            </View>
-            <TabBar
-              active={tab}
-              onChange={(key) => setTab(key as Tab)}
-              tabs={[
-                { key: 'dashboard', label: 'Live' },
-                { key: 'faults', label: 'Codes' },
-                { key: 'settings', label: 'Settings' },
-              ]}
-            />
-          </SafeAreaView>
-        )}
+        <SafeAreaView style={styles.flex} edges={['bottom']}>
+          <View style={styles.flex}>
+            {tab === 'home' && (
+              <HomeScreen
+                boosting={boosting}
+                onToggle={() => setBoosting((v) => !v)}
+              />
+            )}
+            {tab === 'session' && <SessionScreen boosting={boosting} />}
+            {tab === 'tips' && <TipsScreen />}
+            {tab === 'settings' && <SettingsScreen />}
+          </View>
+          <TabBar
+            active={tab}
+            onChange={(key) => setTab(key as Tab)}
+            tabs={[
+              { key: 'home', label: 'Boost' },
+              { key: 'session', label: 'Session' },
+              { key: 'tips', label: 'Tips' },
+              { key: 'settings', label: 'More' },
+            ]}
+          />
+        </SafeAreaView>
       </View>
     </SafeAreaProvider>
   );

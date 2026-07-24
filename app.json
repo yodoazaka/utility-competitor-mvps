@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Apex OBD",
-    "slug": "apex-obd",
+    "name": "AmpBoost",
+    "slug": "ampboost",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,16 +9,16 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0B1218"
+      "backgroundColor": "#0A0C0A"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.apexobd.app"
+      "bundleIdentifier": "com.ampboost.app"
     },
     "android": {
-      "package": "com.apexobd.app",
+      "package": "com.ampboost.app",
       "adaptiveIcon": {
-        "backgroundColor": "#0B1218",
+        "backgroundColor": "#0A0C0A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"

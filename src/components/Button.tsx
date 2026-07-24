@@ -3,7 +3,6 @@ import {
   Pressable,
   StyleSheet,
   Text,
-  View,
   ViewStyle,
 } from 'react-native';
 import { colors, spacing } from '../theme';
@@ -43,35 +42,24 @@ export function Button({ title, onPress, variant = 'primary', style }: Props) {
 
 const styles = StyleSheet.create({
   base: {
-    borderRadius: 14,
+    borderRadius: 16,
     paddingVertical: 16,
     paddingHorizontal: spacing.lg,
     alignItems: 'center',
   },
-  primary: {
-    backgroundColor: colors.accent,
-  },
+  primary: { backgroundColor: colors.accent },
   secondary: {
     backgroundColor: colors.bgSoft,
     borderWidth: 1,
     borderColor: colors.border,
   },
-  ghost: {
-    backgroundColor: 'transparent',
-  },
-  pressed: {
-    opacity: 0.85,
-  },
+  ghost: { backgroundColor: 'transparent' },
+  pressed: { opacity: 0.88, transform: [{ scale: 0.98 }] },
   label: {
-    color: '#06201C',
+    color: '#12180A',
     fontSize: 17,
-    fontWeight: '700',
-    letterSpacing: 0.2,
+    fontWeight: '800',
   },
-  secondaryLabel: {
-    color: colors.text,
-  },
-  ghostLabel: {
-    color: colors.accent,
-  },
+  secondaryLabel: { color: colors.text },
+  ghostLabel: { color: colors.accent },
 });

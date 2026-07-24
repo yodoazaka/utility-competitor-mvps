@@ -1,5 +1,5 @@
 {
-  "name": "apex-obd",
+  "name": "ampboost",
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
@@ -22,5 +22,5 @@
     "web": "expo start --web"
   },
   "private": true,
-  "description": "Apex OBD — clear car diagnostics for everyone"
+  "description": "AmpBoost — honest one-tap game performance helper"
 }

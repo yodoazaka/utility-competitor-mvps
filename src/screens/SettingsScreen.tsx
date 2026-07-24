@@ -1,37 +1,40 @@
-import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Alert, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Button } from '../components/Button';
 import { colors, spacing } from '../theme';
 
-type Props = {
-  onRestart: () => void;
-};
+export function SettingsScreen() {
+  const [tipped, setTipped] = useState(false);
 
-export function SettingsScreen({ onRestart }: Props) {
   return (
     <ScrollView style={styles.wrap} contentContainerStyle={styles.content}>
       <Text style={styles.title}>Settings</Text>
+
       <View style={styles.card}>
-        <Text style={styles.label}>Price</Text>
-        <Text style={styles.value}>$3.99 one-time</Text>
-        <Text style={styles.hint}>No subscription. Unlock once, use on your devices.</Text>
-      </View>
-      <View style={styles.card}>
-        <Text style={styles.label}>About Apex OBD</Text>
+        <Text style={styles.label}>Pricing</Text>
+        <Text style={styles.value}>Free</Text>
         <Text style={styles.hint}>
-          Apex OBD turns raw diagnostic codes into clear guidance. Who it’s for: drivers who want
-          to understand a check-engine light before visiting a shop. How to start: follow the
-          3-step setup, or explore demo data immediately.
+          Optional tip $0.49 — never required. Cheaper (and fairer) than paid-only boosters.
+        </Text>
+        <Button
+          title={tipped ? 'Thanks — tip recorded (demo)' : 'Send $0.49 tip (demo)'}
+          variant={tipped ? 'secondary' : 'primary'}
+          onPress={() => {
+            setTipped(true);
+            Alert.alert('Tip', 'Demo only — no real charge in this MVP.');
+          }}
+          style={{ marginTop: spacing.md }}
+        />
+      </View>
+
+      <View style={styles.card}>
+        <Text style={styles.label}>About AmpBoost</Text>
+        <Text style={styles.hint}>
+          What it does: one-tap session helper that frees memory and focus noise.{'\n'}
+          Who it’s for: mobile gamers who want honest tools.{'\n'}
+          How to start: open Home → tap Boost → launch your game.
         </Text>
       </View>
-      <View style={styles.card}>
-        <Text style={styles.label}>Demo mode</Text>
-        <Text style={styles.hint}>
-          Hardware pairing is stubbed in this MVP. Live gauges and codes use sample streams so you
-          can evaluate the experience.
-        </Text>
-      </View>
-      <Button title="Replay welcome & setup" variant="secondary" onPress={onRestart} />
     </ScrollView>
   );
 }
@@ -42,9 +45,8 @@ const styles = StyleSheet.create({
   title: {
     color: colors.text,
     fontSize: 28,
-    fontWeight: '800',
+    fontWeight: '900',
     letterSpacing: -0.5,
-    marginBottom: spacing.sm,
   },
   card: {
     backgroundColor: colors.bgElevated,
@@ -53,21 +55,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
   },
-  label: {
-    color: colors.text,
-    fontSize: 16,
-    fontWeight: '700',
-    marginBottom: 6,
-  },
-  value: {
-    color: colors.accent,
-    fontSize: 22,
-    fontWeight: '800',
-    marginBottom: 6,
-  },
-  hint: {
-    color: colors.textMuted,
-    fontSize: 14,
-    lineHeight: 21,
-  },
+  label: { color: colors.text, fontSize: 16, fontWeight: '800', marginBottom: 6 },
+  value: { color: colors.accent, fontSize: 28, fontWeight: '900', marginBottom: 6 },
+  hint: { color: colors.textMuted, fontSize: 14, lineHeight: 21 },
 });

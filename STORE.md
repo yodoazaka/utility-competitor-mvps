@@ -1,22 +1,24 @@
-# Apex OBD — Play Store copy
+# AmpBoost — Play Store copy
 
 **Short description**  
-Car diagnostics explained in plain English. Live gauges + clear fault help. $3.99 once.
+Honest one-tap game boost. Free forever. Optional $0.49 tip. No fake 4× claims.
 
 **Full description**  
-Apex OBD helps you understand what your car is saying — without a mechanic’s dictionary.
+AmpBoost is a simple session helper for Android gaming.
 
 WHAT YOU GET
-• Guided setup: plug adapter → pair → live dashboard  
-• Large, readable gauges (RPM, speed, coolant, load, battery, intake)  
-• Fault codes with “what this means” and “what to do”  
-• Demo mode so you can explore before buying an adapter  
-• One-time $3.99 — no subscription  
+• One giant Boost button — designed for thumbs  
+• Clear Memory / Focus / Heat status chips  
+• Active session HUD with before → after  
+• Tips that explain real limits (no miracle FPS math)  
+• Free to use · optional $0.49 tip · never paywalled  
 
 WHO IT’S FOR  
-Everyday drivers who want to know if a check-engine light is urgent or can wait.
+Players who are tired of aggressive paywalls and exaggerated speed claims.
 
 HOW TO START  
-Follow the in-app 3-step guide, or open demo mode instantly.
+1. Open AmpBoost  
+2. Tap Boost  
+3. Launch your game  
 
-Requires a compatible Bluetooth OBD-II adapter for live vehicle data.
+Results vary by device. AmpBoost reduces contention so your phone can perform at its best.

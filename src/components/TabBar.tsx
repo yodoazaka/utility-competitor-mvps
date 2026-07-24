@@ -19,11 +19,12 @@ export function TabBar({ tabs, active, onChange }: Props) {
           <Pressable
             key={tab.key}
             onPress={() => onChange(tab.key)}
-            style={[styles.tab, isActive && styles.tabActive]}
+            style={styles.tab}
           >
             <Text style={[styles.label, isActive && styles.labelActive]}>
               {tab.label}
             </Text>
+            {isActive ? <View style={styles.underline} /> : <View style={styles.spacer} />}
           </Pressable>
         );
       })}
@@ -40,18 +41,15 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.sm,
     paddingTop: spacing.xs,
   },
-  tab: {
-    flex: 1,
-    alignItems: 'center',
-    paddingVertical: spacing.sm,
+  tab: { flex: 1, alignItems: 'center', paddingVertical: spacing.sm },
+  label: { color: colors.textMuted, fontSize: 13, fontWeight: '700' },
+  labelActive: { color: colors.accent },
+  underline: {
+    marginTop: 6,
+    width: 18,
+    height: 3,
+    borderRadius: 2,
+    backgroundColor: colors.accent,
   },
-  tabActive: {},
-  label: {
-    color: colors.textMuted,
-    fontSize: 13,
-    fontWeight: '600',
-  },
-  labelActive: {
-    color: colors.accent,
-  },
+  spacer: { marginTop: 6, height: 3 },
 });
