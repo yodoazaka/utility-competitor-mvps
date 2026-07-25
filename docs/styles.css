@@ -1,0 +1,63 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --accent: #1f6feb;
+  --border: #e5e5e2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+}
+
+p, li { color: var(--muted); }
+
+a { color: var(--accent); }
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav { margin-bottom: 2rem; }
+
+ul { padding-left: 1.2rem; }
