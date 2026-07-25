@@ -8,14 +8,25 @@ Three Expo apps on separate branches, each configured for Google Play AAB upload
 | `app/ampboost` | AmpBoost | `com.ampboost.app` | Free (+ optional tip) |
 | `app/arctag-nfc` | ArcTag NFC | `com.arctagnfc.app` | $2.99 |
 
-## Upload any app
+## Production AAB downloads
+
+| App | AAB |
+|-----|-----|
+| Apex OBD | https://expo.dev/artifacts/eas/LRHoljLyMHTtGxjMMS26tTWD5HB9Wlhu9jQlHtfk69E.aab |
+| AmpBoost | https://expo.dev/artifacts/eas/5eLTkqogG7BDWvf0r_m3K2rVH9BwMTh__rIels5nNm0.aab |
+| ArcTag NFC | https://expo.dev/artifacts/eas/fOS6myXVcmq3OwsXfOysEZfrdfy-0jU1RuQl7wIa190.aab |
+
+## Privacy policy URLs (Play Console)
+
+| App | URL |
+|-----|-----|
+| Apex OBD | https://yodoazaka.github.io/utility-competitor-mvps/privacy-apex-obd.html |
+| AmpBoost | https://yodoazaka.github.io/utility-competitor-mvps/privacy-ampboost.html |
+| ArcTag NFC | https://yodoazaka.github.io/utility-competitor-mvps/privacy-arctag-nfc.html |
+
+## Rebuild
 ```bash
 git checkout app/apex-obd   # or app/ampboost / app/arctag-nfc
 npm install
-npx eas-cli login
-npx eas-cli init
-npm run build:android       # production .aab
-npm run submit:android      # draft → internal track
+npm run build:android
 ```
-
-Each branch includes `store/PLAY_CHECKLIST.md`, privacy policy draft, Data safety notes, feature graphic, icon, and screenshots.
