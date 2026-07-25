@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ArcTag NFC",
-    "slug": "arctag-nfc",
+    "slug": "human",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,7 +18,7 @@
     },
     "android": {
       "package": "com.arctagnfc.app",
-      "versionCode": 1,
+      "versionCode": 2,
       "adaptiveIcon": {
         "backgroundColor": "#F6F4FF",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -41,18 +41,17 @@
           "android": {
             "minSdkVersion": 26,
             "targetSdkVersion": 35,
-            "compileSdkVersion": 35
+            "compileSdkVersion": 36
           }
         }
       ]
     ],
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
+    "runtimeVersion": "1.0.0",
     "extra": {
       "eas": {
         "projectId": "4a19aeaf-3d7c-47a8-9639-244f18e22f48"
       }
-    }
+    },
+    "owner": "krispycreameggs-team"
   }
 }
