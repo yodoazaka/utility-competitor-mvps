@@ -4,11 +4,13 @@ Template-first NFC writer. **$2.99** one-time.
 
 Three Expo apps on separate branches, each configured for Google Play AAB upload via EAS.
 
-| Branch | App | Package ID | Price |
-|--------|-----|------------|-------|
-| `app/apex-obd` | Apex OBD | `com.apexobd.app` | $3.99 |
-| `app/ampboost` | AmpBoost | `com.ampboost.app` | Free (+ optional tip) |
-| `app/arctag-nfc` | ArcTag NFC | `com.arctagnfc.app` | $2.99 |
+**Google Play (before Aug 31, 2026):** all three target **Android 16 / API 36** via `expo-build-properties` so new updates remain submittable after the deadline.
+
+| Branch | App | Package ID | Price | targetSdk |
+|--------|-----|------------|-------|-----------|
+| `app/apex-obd` | Apex OBD | `com.apexobd.app` | $3.99 | 36 |
+| `app/ampboost` | AmpBoost | `com.ampboost.app` | Free (+ optional tip) | 36 |
+| `app/arctag-nfc` | ArcTag NFC | `com.arctagnfc.app` | $2.99 | 36 |
 
 ## Run
 ```bash
