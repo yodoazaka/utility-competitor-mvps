@@ -2,7 +2,7 @@
   "expo": {
     "name": "AmpBoost",
     "slug": "human",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -18,7 +18,7 @@
     },
     "android": {
       "package": "com.ampboost.app",
-      "versionCode": 2,
+      "versionCode": 6,
       "adaptiveIcon": {
         "backgroundColor": "#0A0C0A",
         "foregroundImage": "./assets/android-icon-foreground.png",
