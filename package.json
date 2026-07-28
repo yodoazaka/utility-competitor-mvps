@@ -1,0 +1,31 @@
+{
+  "name": "arctag-nfc",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "expo": "~57.0.8",
+    "expo-build-properties": "~1.0.9",
+    "expo-linear-gradient": "~57.0.1",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.0",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:android": "eas build -p android --profile production",
+    "build:android:preview": "eas build -p android --profile preview",
+    "submit:android": "eas submit -p android --profile production",
+    "prebuild:android": "expo prebuild -p android --clean"
+  },
+  "private": true,
+  "description": "ArcTag NFC — template-first NFC writer for everyone"
+}

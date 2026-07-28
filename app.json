@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "ArcTag NFC",
+    "slug": "human",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "primaryColor": "#5B4CFF",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F6F4FF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.arctagnfc.app"
+    },
+    "android": {
+      "package": "com.arctagnfc.app",
+      "versionCode": 3,
+      "adaptiveIcon": {
+        "backgroundColor": "#F6F4FF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.NFC"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.arctagnfc.app",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26,
+            "targetSdkVersion": 36,
+            "compileSdkVersion": 36
+          }
+        }
+      ]
+    ],
+    "runtimeVersion": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "4a19aeaf-3d7c-47a8-9639-244f18e22f48"
+      }
+    },
+    "owner": "krispycreameggs-team"
+  }
+}
