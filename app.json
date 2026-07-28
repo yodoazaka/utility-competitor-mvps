@@ -18,7 +18,7 @@
     },
     "android": {
       "package": "com.arctagnfc.app",
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
         "backgroundColor": "#F6F4FF",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -40,7 +40,7 @@
         {
           "android": {
             "minSdkVersion": 26,
-            "targetSdkVersion": 35,
+            "targetSdkVersion": 36,
             "compileSdkVersion": 36
           }
         }
